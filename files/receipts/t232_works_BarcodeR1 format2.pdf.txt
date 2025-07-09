@@ -1,0 +1,5 @@
+Receipt
+Client: t232_works
+Email: norms2607@gmail.com
+File: BarcodeR1 format2.pdf
+Date: 2025-07-08 23:44:59.575248
