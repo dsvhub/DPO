@@ -23,6 +23,11 @@ from reportlab.lib.pagesizes import LETTER
 from reportlab.lib.units import inch
 from reportlab.lib.utils import ImageReader
 
+from dotenv import load_dotenv
+
+load_dotenv()  # Load environment variables from .env
+EMAIL_ADDRESS = os.getenv("APP_EMAIL")
+EMAIL_PASSWORD = os.getenv("APP_PASSWORD")
 
 
 DB_FILE = "database.db"
@@ -339,8 +344,8 @@ class ProductOrganizerApp:
             message_body = message_box.get("1.0", "end").strip()
 
             try:
-                EMAIL_ADDRESS = "guessacct718@gmail.com"
-                EMAIL_PASSWORD = "ewoc vkjy xlcm vcfm"
+                EMAIL_ADDRESS = os.getenv("APP_EMAIL")
+                EMAIL_PASSWORD = os.getenv("APP_PASSWORD")
 
                 msg = EmailMessage()
                 msg['Subject'] = subject
@@ -532,8 +537,8 @@ class ProductOrganizerApp:
                     return
 
                 try:
-                    EMAIL_ADDRESS = "guessacct718@gmail.com"
-                    EMAIL_PASSWORD = "ewoc vkjy xlcm vcfm"
+                    EMAIL_ADDRESS = os.getenv("APP_EMAIL")
+                    EMAIL_PASSWORD = os.getenv("APP_PASSWORD")
 
                     msg = EmailMessage()
                     msg['Subject'] = subject
@@ -725,8 +730,8 @@ class ProductOrganizerApp:
                     return
 
                 try:
-                    EMAIL_ADDRESS = "guessacct718@gmail.com"
-                    EMAIL_PASSWORD = "ewoc vkjy xlcm vcfm"
+                    EMAIL_ADDRESS = os.getenv("APP_EMAIL")
+                    EMAIL_PASSWORD = os.getenv("APP_PASSWORD")
 
                     msg = EmailMessage()
                     msg['Subject'] = subject
@@ -913,8 +918,8 @@ class ProductOrganizerApp:
                     return
 
                 try:
-                    EMAIL_ADDRESS = "your.email@gmail.com"
-                    EMAIL_PASSWORD = "your_app_password"
+                    EMAIL_ADDRESS = os.getenv("APP_EMAIL")
+                    EMAIL_PASSWORD = os.getenv("APP_PASSWORD")
 
                     msg = EmailMessage()
                     msg['Subject'] = subject
