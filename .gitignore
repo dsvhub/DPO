@@ -1,2 +1,23 @@
-# .gitignore
+# Ignore Python environment files
 .env
+*.pyc
+__pycache__/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore virtual environments
+venv/
+.env/
+.venv/
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.log
