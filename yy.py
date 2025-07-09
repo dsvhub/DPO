@@ -341,8 +341,8 @@ class ProductOrganizerApp:
             message_body = message_box.get("1.0", "end").strip()
 
             try:
-                EMAIL_ADDRESS = "guessacct718@gmail.com"
-                EMAIL_PASSWORD = "ewoc vkjy xlcm vcfm"
+                EMAIL_ADDRESS = ""
+                EMAIL_PASSWORD = ""
 
                 msg = EmailMessage()
                 msg['Subject'] = subject
@@ -534,8 +534,8 @@ class ProductOrganizerApp:
                     return
 
                 try:
-                    EMAIL_ADDRESS = "guessacct718@gmail.com"
-                    EMAIL_PASSWORD = "ewoc vkjy xlcm vcfm"
+                    EMAIL_ADDRESS = ""
+                    EMAIL_PASSWORD = ""
 
                     msg = EmailMessage()
                     msg['Subject'] = subject
@@ -844,8 +844,8 @@ class ProductOrganizerApp:
                     return
 
                 try:
-                    EMAIL_ADDRESS = "guessacct718@gmail.com"
-                    EMAIL_PASSWORD = "ewoc vkjy xlcm vcfm"
+                    EMAIL_ADDRESS = ""
+                    EMAIL_PASSWORD = ""
 
                     msg = EmailMessage()
                     msg['Subject'] = subject
